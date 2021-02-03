@@ -21,6 +21,14 @@ public class Addition {
         String firstNumber = JOptionPane.showInputDialog("Enter first integer: ");
         String secondNumber = JOptionPane.showInputDialog("Enter second integer: ");
         
+        //μετατρέπει τις String εισόδους σε τιμές int για χρήση σε έναν υπολογισμό
+        int number1 = Integer.parseInt(firstNumber);
+        int number2 = Integer.parseInt(secondNumber);
+        
+        int sum = number1 + number2;
+        
+        JOptionPane.showMessageDialog(null, "The sum is " + sum, "Sum of two integers", JOptionPane.PLAIN_MESSAGE );
+        
     }
     
 }
